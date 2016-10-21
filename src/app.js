@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { TrafficMap } from "react-network-diagrams";
+import { Request } from "./components.js";
 var topology = require("./topology.js");
-
+require('expose?$!expose?jQuery!jquery');
+require("bootstrap-webpack");
+require("chosen-js");
+require("../node_modules/chosen-js/chosen.css");
 class App extends React.Component {
     render(){
         return (
@@ -14,4 +18,4 @@ class App extends React.Component {
     }
 }
 
-ReactDOM.render(<App />,document.getElementById("body"));
+ReactDOM.render(<Request />,document.getElementById("body"));

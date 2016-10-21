@@ -1,0 +1,17 @@
+
+
+Request for Basic request
+
+aannd@aannd-VirtualBox:~$ curl -H "Content-Type: application/json" -k -X POST -d '{"start": "10 12 2016 15:30", "end": "10 14 2016 16:30", "sourcePort": "sunn-cr5:9/1/3", "sourceDevice": "sunn-cr5", "destPort": "chic-cr5:4/1/1", "destDevice": "chic-cr5", "azMbps": "100", "zaMbps": "100", "connectionId": "test6661"}' https://localhost:8002/basic_request
+
+
+
+RESPONSE for basic request
+
+
+
+{"connectionId":"test6661","states":{"resv":"COMMITTING","prov":"INITIAL","oper":"ADMIN_DOWN_OPER_DOWN"},"start":"10 19 2016 11:56","end":"10 19 2016 11:56","paths":[{"azPath":[{"origin":"sunn-cr5:9/1/3","target":"sunn-cr5"},{"origin":"sunn-cr5","target":"sunn-cr5:1/1/1"},{"origin":"sunn-cr5:1/1/1","target":"sacr-cr5:1/1/1"},{"origin":"sacr-cr5:1/1/1","target":"sacr-cr5"},{"origin":"sacr-cr5","target":"sacr-cr5:2/1/1"},{"origin":"sacr-cr5:2/1/1","target":"denv-cr5:2/1/1"},{"origin":"denv-cr5:2/1/1","target":"denv-cr5"},{"origin":"denv-cr5","target":"denv-cr5:1/1/1"},{"origin":"denv-cr5:1/1/1","target":"kans-cr5:2/1/1"},{"origin":"kans-cr5:2/1/1","target":"kans-cr5"},{"origin":"kans-cr5","target":"kans-cr5:1/1/1"},{"origin":"kans-cr5:1/1/1","target":"chic-cr5:3/1/1"},{"origin":"chic-cr5:3/1/1","target":"chic-cr5"},{"origin":"chic-cr5","target":"chic-cr5:4/1/1"}],"zaPath":[{"origin":"chic-cr5:4/1/1","target":"chic-cr5"},{"origin":"chic-cr5","target":"chic-cr5:3/1/1"},{"origin":"chic-cr5:3/1/1","target":"kans-cr5:1/1/1"},{"origin":"kans-cr5:1/1/1","target":"kans-cr5"},{"origin":"kans-cr5","target":"kans-cr5:2/1/1"},{"origin":"kans-cr5:2/1/1","target":"denv-cr5:1/1/1"},{"origin":"denv-cr5:1/1/1","target":"denv-cr5"},{"origin":"denv-cr5","target":"denv-cr5:2/1/1"},{"origin":"denv-cr5:2/1/1","target":"sacr-cr5:2/1/1"},{"origin":"sacr-cr5:2/1/1","target":"sacr-cr5"},{"origin":"sacr-cr5","target":"sacr-cr5:1/1/1"},{"origin":"sacr-cr5:1/1/1","target":"sunn-cr5:1/1/1"},{"origin":"sunn-cr5:1/1/1","target":"sunn-cr5"},{"origin":"sunn-cr5","target":"sunn-cr5:9/1/3"}]}]}
+
+
+
+Request for Proper request

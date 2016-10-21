@@ -1,3 +1,11 @@
+*.woff2
+*.png
+*.svg
+*.ttf
+*.eot
+*.woff
+
+
 node_modules/
 build/bundle.js
 .tern-project
